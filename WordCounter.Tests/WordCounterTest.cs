@@ -88,5 +88,14 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_MatcheWordWithPeriodAndCommas_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Hello there, hello, hello.", "hello");
+      int expected = 3;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }
