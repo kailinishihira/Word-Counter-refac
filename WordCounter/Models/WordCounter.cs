@@ -22,7 +22,6 @@ namespace WordCounter.Models
       string word = _inputWord.ToLower();
       string editSentence = sentence.Replace(".", " ");
 
-
       string [] sentenceArray = editSentence.Split(' ');
       for (int i = 0; i < sentenceArray.Length; i++)
       {

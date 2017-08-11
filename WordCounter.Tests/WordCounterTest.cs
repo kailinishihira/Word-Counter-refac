@@ -80,5 +80,13 @@ namespace WordCounter.Tests
       Assert.AreEqual(expected, actual);
     }
 
+    [TestMethod]
+    public void CountRepeats_MatcheWordWithPeriod_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Say hello.", "hello");
+      int expected = 1;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }
