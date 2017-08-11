@@ -90,18 +90,18 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void CountRepeats_MatcheWordWithPeriodAndCommas_1()
+    public void CountRepeats_NoMatchesForBlankFields_0()
     {
-      RepeatCounter newCount = new RepeatCounter("Hello there, hello, hello.", "hello");
-      int expected = 3;
+      RepeatCounter newCount = new RepeatCounter(" ", " ");
+      int expected = 0;
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
 
     [TestMethod]
-    public void CountRepeats_NoMatchesForBlankFields_0()
+    public void CountRepeats_PartialMatches_0()
     {
-      RepeatCounter newCount = new RepeatCounter(" ", " ");
+      RepeatCounter newCount = new RepeatCounter("cathedral", "cat");
       int expected = 0;
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
