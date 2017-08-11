@@ -1,10 +1,11 @@
 body {
-  /*background-image: url("../img/numbers.jpg");*/
   background-repeat: no-repeat;
   background-size: 100%;
+  color: #4c4f51;
 }
 
 h1 {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   font-size: 100px;
   margin-bottom: 10%;
@@ -25,6 +26,10 @@ h4 {
   letter-spacing: 10px;
 }
 
+.well{
+  background-color: #4c4f51;
+  color: white;
+}
 .form-input {
   font-size: 25px;
   letter-spacing: 5px;
