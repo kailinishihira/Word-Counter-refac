@@ -21,7 +21,7 @@ _The user will input a sentence(s) and then input a word to count. The applicati
 |9.| User will enter a multi-word sentence and word to count. The inputted word appears at the end of the inputted sentence with a '.'  | <li>Sentence: "Say hello."</li><li>Word to Count: "hello"</li>   | Word Count: 1  |
 |10.| User will enter a multi-word sentence and word to count. The inputted word appears at the end of the inputted sentence with a '.' and also with a ',' | <li>Sentence: "Say hello, hello."</li><li>Word to Count: "hello"</li>   | Word Count: 2  |
 |11.| User does not input a sentence or word.  | <li>Sentence: " "</li><li>Word to Count: " "</li> | Word Count: 0  |
-|12.| User will enter a sentence and word to count. The inputted word will be a partial match to a word in the sentence. | <li>Sentence: "cathedral"</li><li>Word to Count: "cat"</li> | Word Count: 0  |
+|12.| User will enter a sentence and word to count. The inputted word will only be a partial match to a word in the sentence. | <li>Sentence: "cathedral"</li><li>Word to Count: "cat"</li> | Word Count: 0  |
 
 
 
