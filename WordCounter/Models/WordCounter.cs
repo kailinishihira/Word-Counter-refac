@@ -20,8 +20,10 @@ namespace WordCounter.Models
       _wordCounter = 0;
       string sentence = _inputSentence.ToLower();
       string word = _inputWord.ToLower();
+      string editSentence = sentence.Replace(".", " ");
 
-      string [] sentenceArray = sentence.Split(' ');
+
+      string [] sentenceArray = editSentence.Split(' ');
       for (int i = 0; i < sentenceArray.Length; i++)
       {
         if (sentenceArray[i].IndexOf(word) != -1)
