@@ -34,5 +34,14 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_MatchesOneWordLowerCase_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Hello", "hello");
+      int expected = 1;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }

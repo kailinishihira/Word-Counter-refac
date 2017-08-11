@@ -18,11 +18,13 @@ namespace WordCounter.Models
     public int CountRepeats()
     {
       _wordCounter = 0;
+      string sentence = _inputSentence.ToLower();
+      string word = _inputWord.ToLower();
 
-      if (_inputSentence.IndexOf(_inputWord) != -1)
+      if (sentence.IndexOf(word) != -1)
       {
         _wordCounter += 1;
-      } else 
+      } else
       {
         _wordCounter = 0;
       }
