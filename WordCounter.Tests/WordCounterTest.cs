@@ -16,5 +16,23 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_DoesNotAppearInMultiWordSentence_0()
+    {
+      RepeatCounter newCount = new RepeatCounter("hello there", "hi");
+      int expected = 0;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void CountRepeats_MatchesOneWordSentence_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Hello", "Hello");
+      int expected = 1;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }

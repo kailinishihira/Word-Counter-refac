@@ -23,6 +23,8 @@ namespace WordCounter.Models
       {
         _wordCounter = 0;
       }
+
+
       // string[] sentenceArray =_inputSentence.Split(' ');
       // for (int i = 0; i < sentenceArray.Length; i++)
       // {
