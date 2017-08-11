@@ -97,5 +97,14 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_NoMatchesForBlankFields_0()
+    {
+      RepeatCounter newCount = new RepeatCounter(" ", " ");
+      int expected = 0;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }

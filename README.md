@@ -6,7 +6,7 @@
 
 ## Description
 
-_The user will input a sentence and then input a word. The application will count the number of times the given word appears in the given sentence and display the count back to the user._
+_The user will input a sentence(s) and then input a word to count. The application will count the number of times the given word appears in the given sentence(s) and display the count back to the user._
 
 || Behavior  | Input  | Output  |
 |---|---|---|---|
@@ -19,7 +19,8 @@ _The user will input a sentence and then input a word. The application will coun
 |7.| User will enter a multi-word sentence and a word to count. The inputted word will appear in the middle of the inputted sentence. | <li>Sentence: "Why hello there."</li><li>Word to Count: "hello"</li> | Word Count: 1 |
 |8.| User will enter a multi-word sentence and a word to count. The inputted word will appear multiple times within the inputted sentence.   | <li>Sentence: "You know Dasher and Dancer and Prancer and Vixen, you know Comet and Cupid and Donner and Blitzen."</li><li>Word to Count: "and"  | Word Count: 6 |
 |9.| User will enter a multi-word sentence and word to count. The inputted word appears at the end of the inputted sentence with a '.'  | <li>Sentence: "Say hello."</li><li>Word to Count: "hello"</li>   | Word Count: 1  |
-|10.| User will enter a multi-word sentence and word to count. The inputted word will appear multiple times within the sentence.  | <li>Sentence: "Hello there, hello, hello."  | Word Count: 3  |
+|10.| User will enter a multi-word sentence and word to count. The inputted word will appear multiple times within the sentence.  | <li>Sentence: "Hello there, hello, hello."</li><li>Word to Count: "hello"</li>  | Word Count: 3  |
+|11.| User does not input a sentence or word.  | <li>Sentence: " "</li><li>Word to Count: " "</li> | Word Count: 0  |
 
 
 
