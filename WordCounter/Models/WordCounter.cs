@@ -20,8 +20,8 @@ namespace WordCounter.Models
       int wordCounter = 0;
       string sentence = _inputSentence.ToLower();
       string word = _inputWord.ToLower();
-      string newSentence = sentence.Replace(".", "");
-      string newerSentence = newSentence.Replace(",", "");
+      string newSentence = sentence.Replace(".", " ");
+      string newerSentence = newSentence.Replace(",", " ");
       //
       // for (int i = 0; i < _removeChar.Length; i++)
       // {
