@@ -52,5 +52,14 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_MatchesOneWordInMultiWordSentence_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Hello there", "hello");
+      int expected = 1;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
   }
 }
