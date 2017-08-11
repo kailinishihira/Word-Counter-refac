@@ -19,7 +19,10 @@ namespace WordCounter.Models
     {
       _wordCounter = 0;
 
-      if (_inputSentence.IndexOf(_inputWord) == -1)
+      if (_inputSentence.IndexOf(_inputWord) != -1)
+      {
+        _wordCounter += 1;
+      } else 
       {
         _wordCounter = 0;
       }
