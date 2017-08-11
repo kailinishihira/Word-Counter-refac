@@ -3,12 +3,14 @@
 }
 
 <h1>Word Counter</h1>
-<h3>Enter a sentence and a word to count the number of times the word appears in the sentence</h3>
+<h3>Count the Number of Times the Word Appears</h3>
 
-<form action="/wordcounter/results" method="post">
-  <label for="new-sentence">Enter a sentence: </label>
-  <input type="text" id="new-sentence" name="new-sentence" class="form-control">
-  <label for="count-word">Word to count: </label>
-  <input type="text" id="count-word" name="count-word" class="form-control">
-  <button type="submit" class="btn btn-default">Count!</button>
-</form>
+<div class="well">
+  <form action="/wordcounter/results" method="post">
+    <label for="new-sentence">Enter a sentence(s): </label>
+    <input type="text" id="new-sentence" name="new-sentence" class="form-control">
+    <label for="count-word">Word to count: </label>
+    <input type="text" id="count-word" name="count-word" class="form-control">
+    <button type="submit" class="btn btn-default count">Count!</button>
+  </form>
+</div>

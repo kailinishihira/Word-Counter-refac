@@ -1,0 +1,53 @@
+body {
+  background-image: url("../img/numbers.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  letter-spacing: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5%;
+  letter-spacing: 5px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+form {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+#new-sentence, #count-word {
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.count {
+  float: right;
+  margin-top: 3%;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding: 15px 30px 15px 30px;
+}
+
+.home {
+  margin-left: 48%;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding: 15px 30px 15px 30px;
+}
