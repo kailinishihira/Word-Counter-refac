@@ -21,23 +21,17 @@ namespace WordCounter.Models
       string sentence = _inputSentence.ToLower();
       string word = _inputWord.ToLower();
 
-      if (sentence.IndexOf(word) != -1)
+      string [] sentenceArray = sentence.Split(' ');
+      for (int i = 0; i < sentenceArray.Length; i++)
       {
-        _wordCounter += 1;
-      } else
-      {
-        _wordCounter = 0;
+        if (sentenceArray[i].IndexOf(word) != -1)
+        {
+          _wordCounter += 1;
+        } else
+        {
+          _wordCounter = 0;
+        }
       }
-
-
-      // string[] sentenceArray =_inputSentence.Split(' ');
-      // for (int i = 0; i < sentenceArray.Length; i++)
-      // {
-      //   if (sentenceArray[i].IndexOf(_inputWord) = -1)
-      //   {
-      //     _wordCounter = 0;
-      //   }
-      // }
       return _wordCounter;
     }
   }
