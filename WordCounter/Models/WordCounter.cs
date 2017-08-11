@@ -29,7 +29,7 @@ namespace WordCounter.Models
           _wordCounter += 1;
         } else
         {
-          _wordCounter = 0;
+          _wordCounter += 0;
         }
       }
       return _wordCounter;

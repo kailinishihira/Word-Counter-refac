@@ -61,5 +61,24 @@ namespace WordCounter.Tests
       int actual = newCount.CountRepeats();
       Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CountRepeats_MatchesOneWordInMiddleOfMultiWordSentence_1()
+    {
+      RepeatCounter newCount = new RepeatCounter("Why hello there", "hello");
+      int expected = 1;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
+    public void CountRepeats_MatchesMultipleWordsInMiddleOfMultiWordSentence_6()
+    {
+      RepeatCounter newCount = new RepeatCounter("You know Dasher and Dancer and Prancer and Vixen, you know Comet and Cupid and Donner and Blitzen", "and");
+      int expected = 6;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
+
   }
 }
