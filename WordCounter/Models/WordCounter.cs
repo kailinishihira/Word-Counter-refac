@@ -7,7 +7,7 @@ namespace WordCounter.Models
   {
     private string _inputSentence;
     private string _inputWord;
-    private char[] _removeChar = new char[] {'@', ',', '.', ';', '[', ']', '(', ')', '#', '"'};
+    // private char[] _removeChar = new char[] {'@', ',', '.', ';', '[', ']', '(', ')', '#', '"'};
 
     public RepeatCounter (string inputSentence, string inputWord)
     {
@@ -20,19 +20,21 @@ namespace WordCounter.Models
       int wordCounter = 0;
       string sentence = _inputSentence.ToLower();
       string word = _inputWord.ToLower();
-
+      string newSentence = sentence.Replace(".", "");
+      string newerSentence = newSentence.Replace(",", "");
+      //
       // for (int i = 0; i < _removeChar.Length; i++)
       // {
       //   if (sentence[i] == _removeChar[i])
       //   {
-      //     _newSentence = sentence.Replace(sentence[i], ' ');
+      //      string newSentence = sentence.Remove(_removeChar[i]);
       //   }
       // }
 
       // foreach()
-      string newSentence = sentence.Trim(_removeChar);
+      // string newSentence = sentence.Trim(_removeChar);
 
-      string [] sentenceArray = newSentence.Split(' ');
+      string [] sentenceArray = newerSentence.Split(' ');
       if (sentenceArray.Length <= 0 || word.Length <= 0)
       {
         wordCounter = 0;

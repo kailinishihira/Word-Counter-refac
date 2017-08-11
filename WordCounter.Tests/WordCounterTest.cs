@@ -90,6 +90,15 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
+    public void CountRepeats_MatcheWordWithPeriodComma_2()
+    {
+      RepeatCounter newCount = new RepeatCounter("Say hello, hello.", "hello");
+      int expected = 2;
+      int actual = newCount.CountRepeats();
+      Assert.AreEqual(expected, actual);
+    }
+
+    [TestMethod]
     public void CountRepeats_NoMatchesForBlankFields_0()
     {
       RepeatCounter newCount = new RepeatCounter(" ", " ");
