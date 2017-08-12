@@ -19,10 +19,8 @@ namespace WordCounter.Models
       int wordCounter = 0;
       string sentence = _inputSentence.ToLower();
       string word = _inputWord.ToLower();
-      string newSentence = sentence.Replace(".", " ");
-      string newerSentence = newSentence.Replace(",", " ");
 
-      string [] sentenceArray = newerSentence.Split(' ');
+      string [] sentenceArray = sentence.Split(' ', ',', '.', '"', '#', '-', '!', '?', '*', '(', ')', '[', ']', '{', '}', '/');
       if (sentenceArray.Length <= 0 || word.Length <= 0)
       {
         wordCounter = 0;
