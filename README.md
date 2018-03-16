@@ -41,6 +41,6 @@ _The user will input a sentence(s) and then input a word to count. The applicati
 
 ### License
 
-Copyright (c) 2017 **_Kaili Nishihira_**
+Copyright (c) 2018 **_Kaili Nishihira_**
 
 *Licensed under the [MIT License](https://opensource.org/licenses/MIT)*
